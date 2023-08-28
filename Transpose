@@ -1,0 +1,13 @@
+class Solution
+{
+    public void transpose(int n,int a[][])
+    {
+        for(int i=0;i<a.length;i++){
+            for(int j=i+1;j<a[0].length;j++){
+                int key=a[i][j];
+                a[i][j]=a[j][i];
+                a[j][i]=key;
+            }
+        }
+    }
+}
